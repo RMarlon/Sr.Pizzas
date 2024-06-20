@@ -1,71 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <title>Sr.Pizzas</title>
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="/assets/images/favicon-pizza.png">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Sr - Pizzas</title>
+    <link rel="icon" type="image/jpg" href="assets/images/favicon-pizza.png">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="border"></div>
-    <header class="container">
-        <div class="logo">Sr.Pizzas🍕</div>
-        <nav class="list-container">
-            <ul class="list-menu">
-                <li> <a href="">Início</a> </li>
-                <li> <a href="">Pizzas</a> </li>
-                <li> <a href="">Contato</a> </li>
-            </ul>
-
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <div class="models">
+        <div class="pizza-item">
+            <a href="">
+                <div class="pizza-item--img"><img src="" /></div>
+                <div class="pizza-item--add">+</div>
+            </a>
+            <div class="pizza-item--price">R$ --</div>
+            <div class="pizza-item--name">--</div>
+            <div class="pizza-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
             </div>
-        </nav>
+        </div>
+    </div>
+    <header>
+        <div class="menu-openner"><span>0</span>🛒</div>
     </header>
-
-    <section class="banner-container">
-        <div class="banner"><img src="/assets/images/Banner pizza .png"></div>
-        <div class="about">
-            <h2 class="sub-title">Sobre</h2>
-            <div class="social-media">
-                <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324047%7Ce%7Cface%7C&placement=&creative=320269324047&keyword=face&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-66330211%26loc_physical_ms%3D1001715%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=Cj0KCQjwpNuyBhCuARIsANJqL9M5oaiqvJ_yWu1zFe55wXeGnCJym5QzvpDGWDolvAuEvFExmmJIzMEaAtcXEALw_wcB" target="_blank"><img src="/assets/images/facebook-svgrepo-com.svg" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank"> <img src="/assets/images/instagram-svgrepo-com.svg"
-                        alt="instagram"></a>
-                <a href="https://web.whatsapp.com/" target="_blank"> <img src="/assets/images/whatsapp-svgrepo-com.svg"
-                        alt="Whatsaap"></a>
+    <main>
+        <h1>Pizzas</h1>
+        <div class="pizza-area"></div>
+    </main>
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Suas Pizzas</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
             </div>
         </div>
-        <div class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita et numquam sequi cupiditate
-            consequuntur aspernatur voluptatum ad? Aut porro veniam iure laborum ipsa iste esse doloremque magni
-            tempore quibusdam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem laboriosam expedita alias? Magnam
-            maiores, atque molestias recusandae amet inventore architecto ad vitae exercitationem maxime, in sapiente,
-            tenetur unde reprehenderit!
+    </aside>
+    <div class="pizzaWindowArea">
+        <div class="pizzaWindowBody">
+            <div class="pizzaInfo--cancelMobileButton">Voltar</div>
+            <div class="pizzaBig">
+                <img src="" />
+            </div>
+            <div class="pizzaInfo">
+                <h1>--</h1>
+                <div class="pizzaInfo--desc">--</div>
+                <div class="pizzaInfo--sizearea">
+                    <div class="pizzaInfo--sector">Tamanho</div>
+                    <div class="pizzaInfo--sizes">
+                        <div id="size-zero" data-key="0" class="pizzaInfo--size">PEQUENA <span>--</span></div>
+                        <div id="size-one" data-key="1" class="pizzaInfo--size">MÉDIO <span>--</span></div>
+                        <div data-key="2" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
+                    </div>
+                </div>
+                <div class="pizzaInfo--pricearea">
+                    <div class="pizzaInfo--sector">Preço</div>
+                    <div class="pizzaInfo--price">
+                        <div class="pizzaInfo--actualPrice">R$ --</div>
+                        <div class="pizzaInfo--qtarea">
+                            <button class="pizzaInfo--qtmenos">-</button>
+                            <div class="pizzaInfo--qt">1</div>
+                            <button class="pizzaInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
+                <div class="pizzaInfo--cancelButton">Cancelar</div>
+            </div>
         </div>
+    </div>
 
-        <div class="banner-one"> <img src="/assets/images/cropped-Pizza.jpg" alt="banner-one"> </div>
-    </section>
-
-    <section class="localization">
-        <h2>Nos encontre aqui 👇</h2>
-        <div>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.251934763076!2d-37.05591382417126!3d-10.944332122357055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab386b4e18213%3A0x4601ead8d241770c!2sParque%20Augusto%20Franco!5e0!3m2!1sen!2sbr!4v1716988521735!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-
-    <footer>
-        <div class="border"></div>
-        <div class="logo">Sr.Pizzas🍕</div>
-    </footer>
-
-    <script src="/assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/pizzas.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
-
 </html>

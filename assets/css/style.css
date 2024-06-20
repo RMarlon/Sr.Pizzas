@@ -262,7 +262,6 @@ footer .logo {
     }
     
     .container .list-container ul {
-        /* display: none; */
         position: fixed;
         left: -100%;
         top: 120px;
