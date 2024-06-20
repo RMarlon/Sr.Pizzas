@@ -68,8 +68,6 @@ cs('.pizzaInfo--size').forEach((size, sizeIndex) => {
         c('.pizzaInfo--size.selected').classList.remove('selected');
         size.classList.add('selected');
 
-
-
         if (e.target == c('#size-zero')) {
             c('.pizzaInfo--actualPrice').innerHTML = `R$ ${pizzaJson[sizeIndex].price[0].toFixed(2)}`;
         }
