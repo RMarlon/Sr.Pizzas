@@ -34,6 +34,7 @@ a {
     --border-colors-yellow: #FFE53B;
     --border-colors-Gainsboro: #DCDCDC;
     --border-colors-orangeRed: #d12b09;
+    --border-colors-black: #171b20;
 
     --shadow-white: #FFFFFF;
     --shadow-green: #005a24;
@@ -47,7 +48,7 @@ body {
 }
 
 .border {
-    border: solid 1px var(--border-colors-yellow);
+    border: solid 1px var(--border-colors-orangeRed);
 }
 
 .container {
@@ -82,14 +83,16 @@ body {
     font-weight: bold;
     margin: 0 20px;
     padding: 10px 20px;
-    color: var(--text-colors-white);
-    border-bottom: solid 3px var(--border-colors-green);
+    text-transform: uppercase;
+    color: var(--text-colors-orangeRed);
+    border-bottom: solid 3px var(--border-colors-yellow);
+    text-shadow: 1px 0 2px var(--shadow-black);
     transition: .3s ease-in-out;
 }
 
 .container .list-container ul li a:hover {
-    color: var(--text-colors-green);
-    border-bottom: solid 3px var(--border-colors-yellow);
+    color: var(--text-colors-yellow);
+    border-bottom: solid 3px var(--border-colors-orangeRed);
 }
 
 .container .hamburger{
@@ -169,7 +172,8 @@ body {
     font-size: 32px;
     font-weight: bold;
     color: var(--text-colors-yellow);
-    border-bottom: solid 3px var(--border-colors-green);
+    text-shadow: 2px 0 3px var(--shadow-black);
+    border-bottom: solid 3px var(--border-colors-orangeRed);
 }
 
 .banner-container .about .social-media {
@@ -181,13 +185,13 @@ body {
 .banner-container .about img {
     width: 30px;
     height: 30px;
+    background-size: cover;
     transition: 0.3s ease-in-out;
 }
 
 .banner-container .about img:hover {
-    opacity: 40%;
-    border-radius: 100%;
-    box-shadow: 0 1px 10px var(--shadow-white);
+    border-radius: 20%;
+    box-shadow: 0 1px 10px var(--shadow-black);
 }
 
 .banner-container .paragraph {
