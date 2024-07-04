@@ -26,6 +26,7 @@ a {
 
     --text-colors-white: #FFFFFF;
     --text-colors-Gainsboro: #FFFFFF;
+    --text-colors-Gray: #808080;
     --text-colors-yellow: #FFE53B;
     --text-colors-green: #005a24;
     --text-colors-orangeRed: #d12b09;
@@ -95,26 +96,24 @@ body {
     border-bottom: solid 3px var(--border-colors-orangeRed);
 }
 
-.container .hamburger{
+.container .hamburger {
     display: none;
     cursor: pointer;
 }
 
-.container .hamburger .bar{
+.container .hamburger .bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition:all 0.3s ease-in-out ;
-    transition:all 0.3s ease-in-out ;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: var(--background--colors-Gainsboro);
 }
 
-.banner-container{
-    
-}
+.banner-container {}
 
-.banner-container .banner{ 
+.banner-container .banner {
     width: 100%;
     height: 500px;
     overflow: hidden;
@@ -124,14 +123,14 @@ body {
     box-shadow: 3px 2px 10px var(--shadow-black);
 }
 
-.banner-container  h1, .banner-container .clickNow{
+.banner-container h1, .banner-container .clickNow {
     position: relative;
     left: 25%;
     top: 20%;
     margin-bottom: 60px;
 }
 
-.banner-container  h1{
+.banner-container h1 {
     font-weight: bold;
     font-size: 32px;
     text-transform: uppercase;
@@ -139,7 +138,7 @@ body {
     text-shadow: 3px 2px 10px var(--shadow-black);
 }
 
-.banner-container .clickNow{
+.banner-container .clickNow {
     width: 100px;
     font-weight: bold;
     font-size: 40px;
@@ -153,7 +152,7 @@ body {
     transition: 0.3s;
 }
 
-.banner-container .clickNow:hover{
+.banner-container .clickNow:hover {
     border: 1px solid var(--border-colors-orangeRed);
     color: var(--text-colors-orangeRed);
     text-shadow: 1px 0px 3px var(--shadow-black);
@@ -166,6 +165,7 @@ body {
     width: 1200px;
     display: flex;
     margin: auto;
+    margin-top: 40px;
     align-items: center;
     justify-content: space-between;
 }
@@ -199,22 +199,21 @@ body {
 }
 
 .banner-container .paragraph {
-    width: 100%;
     width: 1200px;
     margin: auto;
-    padding: 24px;
-    margin-bottom: 38px;
+    padding: 30px;
+    margin-bottom: 60px;
     font-size: 16px;
     border-radius: 10px;
-    color: var(--text-colors-orangeRed);
+    color: var(--text-colors-Gray);
     box-shadow: 1px 0px 8px var(--shadow-black);
-    background: var(--background--colors-Gainsboro);
+    background: var(--background--colors-lightGray);
 }
 
-.banner-down .banner-one{
+.banner-down .banner-one {
     width: 100%;
     height: 400px;
-    margin-bottom: 36px;
+    margin: 40px 0;
     background: url(/assets/images/Banner-two.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,8 +222,54 @@ body {
     box-shadow: 3px 2px 10px var(--shadow-black);
 }
 
-.localization h2{
-    margin-bottom: 36px;
+.banner-down .sub-title-two {
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 0;
+    text-transform: uppercase;
+    color: var(--text-colors-orangeRed);
+    text-shadow: 2px 0 20px var(--shadow-Yellow);
+}
+
+.banner-down .more-pizzas {
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+}
+
+.banner-down .more-pizzas h4{
+    color: var(--text-colors-orangeRed);
+    margin-bottom: 20px;
+}
+
+.banner-down .more-pizzas .pizza-desc {
+    height: 400px;
+    margin: 30px 30px;
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--text-colors-Gray);
+    border: solid 1px var(--border-colors-Gainsboro);
+    box-shadow: 0px 0px 5px var(--shadow-black);
+    background-color: var(--background--colors-lightGray);
+    transition: 0.3s;
+}
+
+.banner-down .more-pizzas .pizza-desc:hover{
+    opacity: 85%;
+    box-shadow: 0px 0px 5px var(--shadow-Yellow);
+}
+
+.banner-down .more-pizzas img {
+    width: 200px;
+    margin: 20px 0px;
+}
+
+.localization h2 {
+    margin: 40px 0;
     overflow: hidden;
     padding: 8px 0;
     text-transform: uppercase;
@@ -235,12 +280,12 @@ body {
     box-shadow: 0 0 10px var(--shadow-black);
 }
 
-.localization div{
+.localization div {
     display: flex;
     justify-content: center;
 }
 
-.localization .map{
+.localization .map {
     width: 100%;
     overflow: hidden;
     max-width: 1200px;
@@ -248,18 +293,18 @@ body {
     box-shadow: 0 0 16px var(--shadow-Gainsboro);
 }
 
-.copy-logo{
+.copy-logo {
     display: flex;
     align-items: center;
 }
 
-.copy-logo .copy{
+.copy-logo .copy {
     color: var(--text-colors-Gainsboro);
     text-shadow: 1px 0 2px var(--shadow-black);
     margin-left: 10px;
 }
 
-.copy-logo  .logo {
+.copy-logo .logo {
     flex: 0 0 30%;
     margin: 16px auto;
     font-size: 30px;
@@ -268,9 +313,10 @@ body {
     text-shadow: 0 0 10px var(--shadow-black);
 }
 
-@media(max-width:1228px){
 
-    .banner-container .about{
+@media(max-width:1228px) {
+
+    .banner-container .about {
         width: 780px;
     }
 
@@ -278,11 +324,11 @@ body {
         height: 300px;
     }
 
-    .banner-container .paragraph{
+    .banner-container .paragraph {
         width: 800px;
     }
 
-    .localization .map{
+    .localization .map {
         width: 800px;
         height: 300px;
     }
@@ -294,21 +340,21 @@ body {
     }
 }
 
-@media(max-width:846px){
+@media(max-width:846px) {
 
-    .banner-container .about{
+    .banner-container .about {
         width: 588px;
     }
 
-    .banner-container .about .social-media{
+    .banner-container .about .social-media {
         flex: 0 0 24%;
     }
 
-    .banner-container .paragraph{
+    .banner-container .paragraph {
         width: 600px;
     }
 
-    .localization .map{
+    .localization .map {
         width: 600px;
     }
 }
@@ -323,14 +369,14 @@ body {
         font-size: 30px;
         margin: auto;
     }
-    
+
     .container .list-container ul {
         position: fixed;
         left: -100%;
         top: 120px;
         gap: 0;
         padding-bottom: 16px;
-        flex-direction:column ;
+        flex-direction: column;
         background-color: var(--background--colors-green);
         width: 100%;
         text-align: center;
@@ -338,53 +384,53 @@ body {
         opacity: 0.9;
     }
 
-    .container .list-container ul li a:hover{
-        color: var(--background--colors-black);  
+    .container .list-container ul li a:hover {
+        color: var(--background--colors-black);
     }
 
-    .container .list-container li{
+    .container .list-container li {
         margin: 16px 0;
     }
 
-    .container .list-container ul.active{
+    .container .list-container ul.active {
         left: 0;
     }
 
-    .container .hamburger{
+    .container .hamburger {
         display: block;
         flex: 0 0 100%;
         margin: auto;
         padding-left: 160px;
     }
 
-    .container .hamburger.active .bar:nth-child(1){
+    .container .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .container .hamburger.active .bar:nth-child(2){
+    .container .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .container .hamburger.active .bar:nth-child(3){
+    .container .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .banner-container .about{
+    .banner-container .about {
         width: 60%;
         flex-direction: column;
     }
 
-    .banner-container .about .sub-title{
+    .banner-container .about .sub-title {
         margin-right: 52px;
         font-size: 26px;
     }
 
-    .banner-container .about .social-media{
+    .banner-container .about .social-media {
         width: 200px;
         margin-bottom: 16px;
     }
 
-    .banner-container .paragraph{
+    .banner-container .paragraph {
         width: 400px;
         height: 200px;
         font-size: 12px;
@@ -392,47 +438,48 @@ body {
         text-align: justify;
     }
 
-    .localization .map{
+    .localization .map {
         width: 400px;
         height: 280px;
     }
 
-    footer .logo{
+    footer .logo {
         font-size: 30px;
     }
 }
 
-@media(max-width:515px){
+@media(max-width:515px) {
     .container .logo {
         font-size: 26px;
     }
 
-    .banner-container .sub-title{
+    .banner-container .sub-title {
         font-size: 16px;
     }
 
-    .localization h2{
-        font-size:16px ;
+    .localization h2 {
+        font-size: 16px;
     }
 
-    footer .logo{
+    footer .logo {
         font-size: 26px;
     }
 }
 
-@media(max-width:436px){
+@media(max-width:436px) {
 
-    .container .hamburger{
+    .container .hamburger {
         padding-left: 70px;
     }
 
-    .banner-container .paragraph{
+    .banner-container .paragraph {
         width: 300px;
         height: 200px;
         font-size: 10px;
         line-height: 13px;
     }
-    .localization .map{
+
+    .localization .map {
         width: 300px;
         height: 200px;
     }
