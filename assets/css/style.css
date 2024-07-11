@@ -239,7 +239,7 @@ body {
     line-height: 25px;
 }
 
-.banner-down .more-pizzas h4{
+.banner-down .more-pizzas h4 {
     color: var(--text-colors-orangeRed);
     margin-bottom: 20px;
 }
@@ -256,7 +256,7 @@ body {
     transition: 0.3s;
 }
 
-.banner-down .more-pizzas .pizza-desc:hover{
+.banner-down .more-pizzas .pizza-desc:hover {
     opacity: 85%;
     box-shadow: 0px 0px 5px var(--shadow-Yellow);
 }
@@ -266,7 +266,7 @@ body {
     margin: 20px 0px;
 }
 
-.localization h2 {
+.localization h2, .opnation-title {
     margin: 40px 0;
     overflow: hidden;
     padding: 8px 0;
@@ -291,20 +291,102 @@ body {
     box-shadow: 0 0 16px var(--shadow-Gainsboro);
 }
 
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    /* background-image: url(/assets/images/bkj-pizzas.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contact-left-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-colors-yellow);
+    text-shadow: 2px 2px 3px var(--shadow-black);
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: var(--background--colors-orangeRed);
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: var(--text-colors-Gray);
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    resize: none;
+}
+
+.contact-inputs:focus {
+    border: 2px solid var(--border-colors-orangeRed);
+}
+
+.contact-inputs::placeholder {
+    color: var(--text-colors-Gray);
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: var(--text-colors-white);
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #d12b09, #FFE53B);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+.contact-right img {
+    width: 500px;
+}
+
 .copy-logo {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .copy-logo .copy {
     color: var(--text-colors-Gainsboro);
     text-shadow: 1px 0 2px var(--shadow-black);
-    margin-left: 10px;
+    margin-bottom: 16px;
 }
 
 .copy-logo .logo {
-    flex: 0 0 30%;
-    margin: 16px auto;
+    margin: 16px;
     font-size: 30px;
     font-weight: bold;
     color: var(--text-colors-yellow);
@@ -335,6 +417,16 @@ body {
 @media(max-width:1000px) {
     .container {
         flex-direction: column;
+    }
+}
+
+@media (max-width:800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+
+    .contact-right {
+        display: none;
     }
 }
 
@@ -375,7 +467,6 @@ body {
         gap: 0;
         padding-bottom: 16px;
         flex-direction: column;
-        background-color: var(--background--colors-lightGray);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -420,7 +511,7 @@ body {
         font-size: 30px;
     }
 
-    .banner-down .sub-title-two, .localization h2{
+    .banner-down .sub-title-two, .localization h2 {
         font-size: 30px;
     }
 
@@ -442,15 +533,15 @@ body {
         height: 280px;
     }
 
-    .copy-logo{
+    .copy-logo {
         flex-direction: column;
     }
 
-    .copy-logo .copy{
+    .copy-logo .copy {
         margin-bottom: 20px;
     }
 
-    .copy-logo .logo{
+    .copy-logo .logo {
         font-size: 30px;
     }
 }
@@ -471,16 +562,16 @@ body {
         padding-left: 70px;
     }
 
-    .banner-container h1, .banner-container .clickNow{
+    .banner-container h1, .banner-container .clickNow {
         left: 15%;
         top: 25%;
     }
 
-    .banner-container h1{
+    .banner-container h1 {
         font-size: 28px;
     }
 
-    .banner-container .clickNow{
+    .banner-container .clickNow {
         font-size: 35px;
     }
 
@@ -491,7 +582,7 @@ body {
         line-height: 13px;
     }
 
-    .banner-down .more-pizzas{
+    .banner-down .more-pizzas {
         width: 300px;
         flex-direction: column;
     }
