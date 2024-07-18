@@ -473,7 +473,7 @@ body {
     .container .list-container ul {
         position: absolute;
         left: -100%;
-        top: 118px;
+        top: 123.4px;
         gap: 0;
         padding-bottom: 16px;
         flex-direction: column;
@@ -510,6 +510,10 @@ body {
 
     .container .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .banner-container h1, .banner-container .clickNow {
+        top: 36%;
     }
 
     .banner-container .about {
@@ -558,16 +562,30 @@ body {
 }
 
 @media(max-width:500px) {
+    .container .logo {
+        font-size: 26px;
+    }
+
+    .banner-container .banner h1, .banner-container .about .sub-title, 
+    .banner-container .clickNow, .banner-down .sub-title-two, .localization h2, 
+    .opnation-title, .contact-left-title h2 {
+        font-size: 25px;
+    }
+
     .banner-container h1, .banner-container .clickNow {
         left: 10%;
         top: 25%;
+    }
+
+    .copy-logo .logo {
+        font-size: 26px;
     }
 }
 
 @media(max-width:436px) {
 
     .container .hamburger {
-        /* padding-left: 70px; */
+        padding-left: 70px;
     }
 
     .banner-container h1, .banner-container .clickNow {
@@ -603,12 +621,8 @@ body {
 
 @media(max-width:402px) {
 
-    .banner-container .banner h1 {
-        font-size: 25px;
-    }
-
-    .banner-container .clickNow {
-        font-size: 25px;
+    .container .logo {
+        font-size: 20px;
     }
 
     .banner-container .paragraph {
@@ -627,7 +641,11 @@ body {
         height: 150px;
     }
 
-    .copy-logo .copy{
+    .copy-logo .logo {
+        font-size: 20px;
+    }
+
+    .copy-logo .copy {
         font-size: 10px;
     }
 }
