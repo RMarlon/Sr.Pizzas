@@ -106,13 +106,13 @@ c('.pizzaInfo--addButton').addEventListener('click', () => {
     closeModal();
 });
 
-c('.menu-openner').addEventListener('click', ()=>{
-    if(cart.length > 0){
+c('.menu-openner').addEventListener('click', () => {
+    if (cart.length > 0) {
         c('aside').style.left = '0';
     }
 });
 
-c('menu-closer').addEventListener('click', ()=>{
+c('.menu-closer').addEventListener('click', () => {
     c('aside').style.left = '100vw';
 });
 
@@ -129,26 +129,25 @@ function updateCart() {
 
         for (let i in cart) {
             let pizzaItem = pizzaJson.find((item) => item.id == cart[i].id);
-            // subtotal += pizzaItem.price[2] * cart[i].qt;
 
             let cartItem = c('.models .cart--item').cloneNode(true);
             let pizzaSizeName;
             switch (cart[i].size) {
                 case 0:
                     pizzaSizeName = 'P';
-                    if(pizzaSizeName == 'P'){
+                    if (pizzaSizeName == 'P') {
                         subtotal += pizzaItem.price[0] * cart[i].qt;
                     }
                     break;
                 case 1:
                     pizzaSizeName = 'M';
-                    if(pizzaSizeName == 'M'){
+                    if (pizzaSizeName == 'M') {
                         subtotal += pizzaItem.price[1] * cart[i].qt;
                     }
                     break;
                 case 2:
                     pizzaSizeName = 'G';
-                    if(pizzaSizeName == 'G'){
+                    if (pizzaSizeName == 'G') {
                         subtotal += pizzaItem.price[2] * cart[i].qt;
                     }
                     break;
