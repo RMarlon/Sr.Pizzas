@@ -44,6 +44,10 @@ a {
     --shadow-black: #171b20;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--background--colors-lightGray);
 }
@@ -291,7 +295,7 @@ body {
     box-shadow: 0 0 16px var(--shadow-Gainsboro);
 }
 
-.contact-container {
+#contact-container {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -303,7 +307,6 @@ body {
     flex-direction: column;
     align-items: start;
     gap: 20px;
-    /* background-image: url(/assets/images/bkj-pizzas.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;

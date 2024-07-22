@@ -62,6 +62,17 @@ main {
     flex:1;
     padding:20px;
 }
+.arrow-area a{
+    display: flex;
+    color: #d12b09;
+    align-items: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px #000;
+}
+.arrow-of-start{
+    width: 50px;
+}
+
 h1 {
     font-family:'Hepta Slab', Helvetica, Arial;
 }
