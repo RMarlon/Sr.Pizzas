@@ -5,11 +5,11 @@
 🎓 Project made with the academic objective.
 </p>
 
-<h1> <a href=" https://rmarlon.github.io/Sr.Pizzas/"> See the site 🖥️ </a></h1>
+<h1> <a href="https://rmarlon.github.io/Sr.Pizzas/"> See the site 🖥️ </a></h1>
 
-📱
+📱💻🖥️
 
-<a href=" https://rmarlon.github.io/Sr.Pizzas/"><img src="/assets/images/Mobile responsive.png"></a>
+<a href="https://rmarlon.github.io/Sr.Pizzas/"><img src="/assets/images/Mobile responsive.png"></a>
 
 ## Tools used 🛠️
 

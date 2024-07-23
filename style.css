@@ -44,7 +44,7 @@ a {
     --shadow-black: #171b20;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -142,24 +142,24 @@ body {
 
 .banner-container .clickNow {
     width: 100px;
-    font-weight: bold;
-    font-size: 40px;
     padding: 20px;
+    font-size: 40px;
+    transition: 0.5s;
+    font-weight: bold;
     border-radius: 20px;
     text-transform: uppercase;
     color: var(--text-colors-yellow);
     box-shadow: 5px 5px 10px var(--shadow-black);
     text-shadow: 1px 0px 3px var(--shadow-black);
     background: var(--background--colors-orangeRed);
-    transition: 0.3s;
 }
 
 .banner-container .clickNow:hover {
-    border: 1px solid var(--border-colors-orangeRed);
     color: var(--text-colors-orangeRed);
+    box-shadow: 3px 3px 5px var(--shadow-Yellow);
     text-shadow: 1px 0px 3px var(--shadow-black);
     background: var(--background--colors-lightGray);
-    box-shadow: 3px 3px 5px var(--shadow-Yellow);
+    border: 1px solid var(--border-colors-orangeRed);
 }
 
 .banner-container .about {
@@ -376,6 +376,35 @@ body {
     width: 500px;
 }
 
+.botton-container {
+    bottom: 0%;
+    right: 14%;
+    position: fixed;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    background-color: var(--background--colors-yellow);
+    box-shadow: 3px 3px 5px var(--background--colors-black);
+}
+
+.botton-container:hover{
+    opacity: 90%;
+    background-color: var(--background--colors-green)
+}
+
+.botton-whats{
+    width: 100%;
+    padding: 15px;
+}
+
+.botton-whats img {
+    width: 40px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
 .copy-logo {
     display: flex;
     align-items: center;
@@ -569,8 +598,8 @@ body {
         font-size: 26px;
     }
 
-    .banner-container .banner h1, .banner-container .about .sub-title, 
-    .banner-container .clickNow, .banner-down .sub-title-two, .localization h2, 
+    .banner-container .banner h1, .banner-container .about .sub-title,
+    .banner-container .clickNow, .banner-down .sub-title-two, .localization h2,
     .opnation-title, .contact-left-title h2 {
         font-size: 25px;
     }
