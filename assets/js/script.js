@@ -188,3 +188,16 @@ function updateCart() {
         c('aside').style.left = '100vw';
     }
 }
+
+
+
+const url = ('https://wa.me/551130042222');
+
+const btn = c('.cart--finalizar').addEventListener('click', () => {
+    urlOpen(url);
+});
+
+function urlOpen(url) {
+    const win = window.open(url, '_blanck');
+    win.focus();
+}
